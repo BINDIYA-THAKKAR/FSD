@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+    function handleclick(){
+
+        let name=document.getElementById("name").value;
+        let age= document.getElementById("age").value;
+        let Roll_no=document.getElementById("rollno").value;
+        let table=document.getElementById("StudentTable")
+        let row1=document.createElement("tr")
+        let elements=document.getElementsByTagName("input")
+        console.log(elements.length)
+        
+                    
+        cell1.innerText=name
+        cell2.innerText=age
+        cell3.innerText=Roll_no
+        row1.appendChild(cell1)
+        row1.appendChild(cell2)
+        row1.appendChild(cell3)
+
+        table.appendChild(row1)
+        document.getElementsByTagName("body")[0].appendChild(table)
+        console.log("done")
+        
+        
+    }
+
+</script>
+</head>
+<body>
+    <label for="name"> Name <input type="text" id="name" /> </label><br/><br/>
+    <label for="age"> Age <input type="number" id="age" /> </label><br/><br/>
+    <label for="Roll_No"> Roll_No <input type="number" id="rollno" /> </label><br/><br/>
+    <button onclick="handleclick()"> Click</button><br/>
+    <table id="StudentTable" border="1"> </table>
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th> Age</th>
+            <th> Roll_No </th>
+        </tr>
+    </thead>
+    
+</body>
+</html>

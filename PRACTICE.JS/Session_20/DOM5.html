@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Table</title>
+
+    <script>
+        function handleclick(){
+            let table=document.createElement("table")
+            let row1=document.createElement("tr")
+            for(i=0;i<5;i++){
+                let cell1=document.createElement("td")
+                cell1.innerText="Cell 1"
+                row1.appendChild(cell1)
+            }
+            table.appendChild(row1)
+            document.getElementsByTagName("body")[0].appendChild(table)
+            console.log("done")
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="handleclick()"> creating table </button>
+    <div id="myid"></div>
+    
+</body>
+</html>

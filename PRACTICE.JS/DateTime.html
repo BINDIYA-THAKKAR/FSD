@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let currentdate=new Date()
+        console.log(currentdate)
+        console.log(currentdate.toDateString())
+        console.log(currentdate.toUTCString())
+        let yesterdaydate=new Date(2023,02,11)
+        console.log(yesterdaydate)
+        let yesterdaydate1=new Date(2023,02,11,23,11,45,47)
+        console.log(yesterdaydate1)
+        let cdate=new Date("january 1 2023")
+        console.log(cdate)
+        console.log(currentdate.getDate())
+        console.log(currentdate.getFullYear())
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var d=new Date()
+        var dayName = days[d.getDay()];
+        console.log(dayName)
+        console.log(d.toLocaleString("en-us",{weekday:"long"}))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

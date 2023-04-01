@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Student{
+            constructor(num1,num2){ //this is called when objects are created by new keyword
+            this.num1=num1
+            this.num2=num2
+            }
+            addition() {
+                console.log("addition is",this.num1,"+",this.num2,"=",this.num1+this.num2)
+             }
+             subtraction() {
+                console.log("subtraction is",this.num1,"-",this.num2,"=",this.num1-this.num2)
+             }
+             division(){
+                console.log("division is",this.num1,"/",this.num2,"=",this.num1/this.num2)
+             }
+             }
+        //class over
+        let s1=new Student(30,40)
+        s1.addition()
+        s1.subtraction()
+        s1.division
+        let s2=new Student(50,70)
+        s2.addition()
+        s2.subtraction()
+        s2.division
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

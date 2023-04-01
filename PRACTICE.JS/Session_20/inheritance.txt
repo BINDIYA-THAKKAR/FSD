@@ -1,0 +1,26 @@
+#Function Overriding
+Same function is created in parent and child class is called function Overriding
+Super is used to take constructor with parameter in parent class
+
+#DOM (Document Object Model )
+    Dom has predefined objects available in browser only . Within browser DOM takes up the responsibility to display in it to the user.
+     >> Using Dom objects JS we can perform various operation like creating a new element , 
+     >> changing the look and feel on some event , 
+     >> Making an element visible/invisible
+    Thats why DOM is very much used in Dynamic html
+
+    iN dOM base object is Document. Using Document object we can select various element using predefined method like
+    >> Find element by ID
+    >> Find element by name et..
+
+When we are using Document.getElementbyId returns one value and when we are using elementbyname reyurns multiple value means array
+
+some funtions like doccument.GetElementByTagName() ,doccument.GetElementByclassName() returns HTML collections
+To use HTML collections we have to first convert html collection to array by using Array.from method
+Array.from(elements).forEach(element => {
+                alert(element.innerText)
+            });
+
+
+
+Q1 : create form name ,age and roll no and a button on clicking button this data should be added in table. table should have id with name StudentTable

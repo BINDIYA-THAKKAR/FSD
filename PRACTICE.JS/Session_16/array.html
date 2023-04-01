@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function GetNumber(){
+            let a=[]
+            n= document.getElementById("no").value
+            a=a.push(n)
+            console.log(a)
+        }
+        
+        
+        /*let a=[]
+        a.push(20)
+        a.push(30)
+        a.push(40)
+        
+        for(let i=0;i<a.length;i++){
+            console.log(a[i])
+        }
+        a.forEach(function(x){console.log(x)})*/
+
+    </script>
+</head>
+<body>
+    <input type="number" id="no" onchange="GetNumber">
+    
+</body>
+</html>

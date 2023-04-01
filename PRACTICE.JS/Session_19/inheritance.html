@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Employee{
+            constructor(name,id,salary){ //this is called when objects are created by new keyword
+            this.name=name
+            this.id=id
+            this.salary=salary
+            }
+            work() {
+                console.log(this.name,"performs work") 
+                
+             }
+        }//class over
+        class Manager extends Employee{
+            constructor(name,id,salary,reportess){
+            super(name,id,salary) //this calls employees constructor
+            /* when you extend from a class you have to call base class constructor by using super*/
+            this.reportess=reportess
+        }
+    
+        managers(){
+            console.log(this.name,"managers employees",this.reportess)
+        }
+    }
+    let e1=new Employee("krishna",10023,188888)
+    let e2=new Employee("radhika",26626,199999)
+    let arr1=[e1,e2]
+    let m1=new Manager("kirtan",277,28288282,arr1)
+    m1.managers()
+    m1.work()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

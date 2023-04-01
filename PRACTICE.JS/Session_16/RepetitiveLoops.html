@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Repetitive Loops</title>
+    <script>
+        function handleclick(){
+            let no= parseInt(document.getElementById("num").value);
+            let result=""
+        let i=1
+            while(i<=10){
+                result= result +no+"*"+i+"="+ (no*i)+"<br/>"
+            i=i+1
+            }
+            document.getElementById("result").innerHTML=result
+    }
+    </script>
+</head>
+<body>
+    <label for="Table"> Table <input type="number" id="num" onchange="handleclick()"> </label>
+    <p id="no"> <p id="result"></p></p>
+    
+</body>
+</html>

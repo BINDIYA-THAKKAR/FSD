@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Object 1 </title>
+    <script>
+        let student1={}
+        student1['name']='Krishna'
+        student1['age']=25
+        student1['address']={'flatno':45,'location':'agra','country':'India'}
+        console.log(student1)
+        console.log(JSON.stringify(student1))
+        student1['study']=function(){
+            console.log(this.name,"study in college") //this.name referes to students name and in this case its student1 as only one object
+            console.log(this.address.country,"is my country")
+            console.log(this.name , "lives in",this.address )
+        }
+        student1.study()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
